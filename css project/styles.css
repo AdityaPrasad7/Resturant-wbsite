@@ -98,11 +98,12 @@ a {
 .about{
     color: #f0ffe6fb;
     padding-top: 20px;
-    margin: 0 165px 0 165px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 15px;
-    font-family:Georgia, 'Times New Roman', Times, serif
-    
+    font-family:Georgia, 'Times New Roman', Times, serif ;
 }
 .ordernow{
     display: flex;
