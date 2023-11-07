@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, rgb(213, 255, 204), rgb(252, 255, 192));
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+        }
+        .Contactform{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #8abb55;
+            font-family:cursive;
+        }
+
+        form {
+            height: 400px;
+            width: 300px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(37, 37, 37, 0.1);
+        }
+
+        label,
+        input,
+        textarea {
+            display: inline;
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+            color: #418406;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(to right, #e0c200 0%, #fe1900 60%, #e0c200 100%);
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px !important;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #fff !important;
+            box-shadow: 0 0 10px #817f7f;
+            border-radius: 50px;
+            display: block;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #f43a3a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="Contactform">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+        
+    </div>
+</body>
+
+</html>
